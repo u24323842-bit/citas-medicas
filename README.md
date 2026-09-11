@@ -23,7 +23,17 @@ Arquitectura cliente-servidor:
 
 ## Modulos en desarrollo
 
-_Pendiente de definir._
+Servicios REST publicados por el backend:
+
+| Metodo | Ruta | Descripcion |
+|--------|------|-------------|
+| GET | /api/citas | Lista las citas registradas |
+| GET | /api/citas/disponibilidad | Consulta horarios libres por medico y fecha |
+| POST | /api/citas | Registra una nueva cita |
+| PUT | /api/citas/{id} | Reprograma una cita existente |
+| DELETE | /api/citas/{id} | Cancela una cita |
+| GET | /api/pacientes | Lista los pacientes registrados |
+| POST | /api/pacientes | Registra un paciente |
 
 ## Autor
 
