@@ -23,7 +23,23 @@ Arquitectura cliente-servidor:
 
 ## Modulos en desarrollo
 
-_Pendiente de definir._
+### Backend - servicios REST
+
+| Metodo | Ruta | Descripcion |
+|--------|------|-------------|
+| GET | /api/citas | Lista las citas registradas |
+| GET | /api/citas/disponibilidad | Consulta horarios libres por medico y fecha |
+| POST | /api/citas | Registra una nueva cita |
+| PUT | /api/citas/{id} | Reprograma una cita existente |
+| DELETE | /api/citas/{id} | Cancela una cita |
+| GET | /api/pacientes | Lista los pacientes registrados |
+| POST | /api/pacientes | Registra un paciente |
+
+### Frontend - componentes del portal
+
+- **Reserva de citas**: busqueda de disponibilidad por especialidad, medico y fecha.
+- **Mis citas**: consulta, reprogramacion y cancelacion de las citas del paciente.
+- **Panel de recepcion**: agenda del dia del personal administrativo.
 
 ## Autor
 
