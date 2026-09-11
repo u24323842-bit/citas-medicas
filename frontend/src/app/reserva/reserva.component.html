@@ -1,0 +1,37 @@
+<h2>Reservar una cita</h2>
+
+<form (ngSubmit)="buscarDisponibilidad()">
+  <label>
+    Especialidad
+    <select [(ngModel)]="especialidadId" name="especialidad">
+      <option [value]="0">Seleccione...</option>
+      <option [value]="1">Medicina general</option>
+      <option [value]="2">Pediatria</option>
+      <option [value]="3">Ginecologia</option>
+      <option [value]="4">Odontologia</option>
+    </select>
+  </label>
+
+  <label>
+    Medico
+    <select [(ngModel)]="medicoId" name="medico">
+      <option [value]="0">Seleccione...</option>
+    </select>
+  </label>
+
+  <label>
+    Fecha
+    <input type="date" [(ngModel)]="fecha" name="fecha">
+  </label>
+
+  <button type="submit">Buscar disponibilidad</button>
+</form>
+
+<p *ngIf="mensaje">{{ mensaje }}</p>
+
+<ul class="horarios">
+  <li *ngFor="let horario of horariosLibres">
+    {{ horario }}
+    <button (click)="reservar(horario)">Reservar</button>
+  </li>
+</ul>

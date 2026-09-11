@@ -23,7 +23,7 @@ Arquitectura cliente-servidor:
 
 ## Modulos en desarrollo
 
-Servicios REST publicados por el backend:
+### Backend - servicios REST
 
 | Metodo | Ruta | Descripcion |
 |--------|------|-------------|
@@ -34,6 +34,12 @@ Servicios REST publicados por el backend:
 | DELETE | /api/citas/{id} | Cancela una cita |
 | GET | /api/pacientes | Lista los pacientes registrados |
 | POST | /api/pacientes | Registra un paciente |
+
+### Frontend - componentes del portal
+
+- **Reserva de citas**: busqueda de disponibilidad por especialidad, medico y fecha.
+- **Mis citas**: consulta, reprogramacion y cancelacion de las citas del paciente.
+- **Panel de recepcion**: agenda del dia del personal administrativo.
 
 ## Autor
 
