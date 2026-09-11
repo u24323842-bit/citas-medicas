@@ -23,7 +23,11 @@ Arquitectura cliente-servidor:
 
 ## Modulos en desarrollo
 
-_Pendiente de definir._
+Componentes publicados por el portal del paciente:
+
+- **Reserva de citas**: busqueda de disponibilidad por especialidad, medico y fecha.
+- **Mis citas**: consulta, reprogramacion y cancelacion de las citas del paciente.
+- **Panel de recepcion**: agenda del dia del personal administrativo.
 
 ## Autor
 
