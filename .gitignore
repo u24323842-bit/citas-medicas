@@ -1,0 +1,23 @@
+# Compilados de Java / Maven
+target/
+*.class
+*.jar
+*.war
+
+# Dependencias y compilados de Angular / Node
+node_modules/
+dist/
+.angular/
+
+# Entornos de desarrollo
+.idea/
+.vscode/
+*.iml
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
+
+# Configuracion local sensible
+application-local.properties
+.env
