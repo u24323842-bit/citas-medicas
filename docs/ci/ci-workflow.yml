@@ -1,0 +1,16 @@
+name: CI - Clinica Vitalis Citas Medicas
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+jobs:
+  verificar-estructura:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar estructura de Backend (Spring Boot) y Frontend (Angular)
+        run: |
+          test -f backend/pom.xml
+          test -f frontend/package.json
+          echo "Estructura del proyecto verificada correctamente."
